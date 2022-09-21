@@ -6,6 +6,7 @@ export const cache = new NodeCache({stdTTL: 15})
 
 export const verifyCache = (req: Request, res: Response, next: NextFunction) => {
   try {
+    console.log(req)
     const { q }: any = req.query;
     if (cache.has(q)) {
       return res.status(200).json(cache.get(q));
