@@ -30,7 +30,7 @@ You can use the Postman to test the api
 
 ### Request
 
-`GET /api/`
+`GET http://localhost:5000/api/`
 
 ### Response
 
@@ -40,7 +40,7 @@ You can use the Postman to test the api
 
 ### Request
 
-`GET /api/search?q=CEO`
+`GET http://localhost:5000/api/search?q=CEO`
 
 ![image](https://user-images.githubusercontent.com/29737013/192367121-292ab75c-31d2-4e92-a737-bf42967e4946.png)
 
@@ -48,7 +48,7 @@ You can use the Postman to test the api
 
 ### Request
 
-`GET /api/search?q=CEOin=title`
+`GET http://localhost:5000/api/search?q=CEOin=title`
 
 ![image](https://user-images.githubusercontent.com/29737013/192367532-044fca9c-1ddc-418b-94ca-c0595007d9fb.png)
 
@@ -56,7 +56,7 @@ You can use the Postman to test the api
 
 ### Request
 
-`GET /api/search?in=title&q=CEO&lang=pt`
+`GET http://localhost:5000/api/search?in=title&q=CEO&lang=pt`
 
 ![image](https://user-images.githubusercontent.com/29737013/192367722-374efdff-83f0-4882-a7b8-97e2530b313b.png)
 
