@@ -24,7 +24,7 @@ This is a simple api to query the news from the api Gnews <https://gnews.io/>
 
 # Testing the API
 
-You can use the Postman to test the api
+You can use the Postman to test the api, but first you need to register on <https://gnews.io/> to receive the API_KEY. Then create an .env and put your api-key on a variable called API_TOKEN
 
 ## Get list of breaking news
 
