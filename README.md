@@ -4,7 +4,15 @@
 
 ## The News API
 
-This is a simple api to query the news
+This is a simple api to query the news from the api Gnews <https://gnews.io/>
+
+## Clone this repo 
+
+    git clone <https://github.com/RafaelDamasco/the-news-api>
+
+## Go to the server folder
+
+    cd server
 
 ## Install
 
@@ -52,6 +60,4 @@ You can use the Postman to test the api
 
 ![image](https://user-images.githubusercontent.com/29737013/192367722-374efdff-83f0-4882-a7b8-97e2530b313b.png)
 
-
-
-
+## Front-end (Developing...)
