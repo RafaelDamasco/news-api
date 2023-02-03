@@ -1,10 +1,10 @@
-import axios from 'axios'
-import express from 'express'
-import NewsController from '../controller/news.controller'
-import { verifyCache } from '../middlewares/verify-cache.middleware'
+import axios from 'axios';
+import { Router } from 'express';
+import { getNews, searchNews } from '../controller/news.controller';
+import { verifyCache } from '../middlewares/verify-cache.middleware';
 
-export const NewsRouter = express.Router()
+export const NewsRouter = Router();
 
-NewsRouter.get('/api', NewsController.news)
+NewsRouter.get('/', getNews);
 
-NewsRouter.get('/api/search', verifyCache, NewsController.search)
+NewsRouter.get('/search', verifyCache, searchNews);

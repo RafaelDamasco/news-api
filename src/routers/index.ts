@@ -1,5 +1,3 @@
-import {NewsRouter} from "./news.router";
+import { NewsRouter } from './news.router';
 
-export const routers = [
-  NewsRouter
-]
+export const routers = [NewsRouter];
