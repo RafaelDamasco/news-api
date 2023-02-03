@@ -8,7 +8,7 @@ This is a simple api to query the news from the api Gnews <https://gnews.io/>
 
 ## Clone this repo 
 
-    git clone <https://github.com/RafaelDamasco/the-news-api>
+    git clone https://github.com/RafaelDamasco/the-news-api
 
 ## Go to the server folder
 
@@ -48,7 +48,7 @@ You can use the Postman to test the api, but first you need to register on <http
 
 ### Request
 
-`GET http://localhost:5000/api/search?q=CEOin=title`
+`GET http://localhost:5000/api/search?in=title&q=CEO
 
 ![image](https://user-images.githubusercontent.com/29737013/192367532-044fca9c-1ddc-418b-94ca-c0595007d9fb.png)
 
