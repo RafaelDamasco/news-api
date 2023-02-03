@@ -48,7 +48,7 @@ You can use the Postman to test the api, but first you need to register on <http
 
 ### Request
 
-`GET http://localhost:5000/api/search?in=title&q=CEO
+`GET http://localhost:5000/api/search?in=title&q=CEO`
 
 ![image](https://user-images.githubusercontent.com/29737013/192367532-044fca9c-1ddc-418b-94ca-c0595007d9fb.png)
 
