@@ -15,7 +15,7 @@ interface Article {
   };
 }
 
-const token: string = process.env.API_TOKEN!;
+const token: string = process.env.API_TOKEN2!;
 
 export const news = async () => {
   try {
@@ -27,22 +27,33 @@ export const news = async () => {
     );
 
     return data;
-  } catch (error) {
-    console.log(error);
+  } catch (error: unknown) {
+    console.error(error);
   }
 };
 
-export const search = async (query: string, searchIn: string, language: string) => {
+export const search = async (
+  query: string,
+  searchIn: string,
+  language: string,
+  sortBy: string
+) => {
   try {
     const { data } = await axios.get<Article[]>(
       `https://gnews.io/api/v4/search`,
       {
-        params: { token, q: query, in: searchIn, lang: language },
+        params: {
+          token,
+          q: query,
+          in: searchIn,
+          lang: language,
+          sortby: sortBy,
+        },
       }
     );
 
     return data;
-  } catch (error) {
-    console.log(error);
+  } catch (error: unknown) {
+    console.error(error);
   }
 };

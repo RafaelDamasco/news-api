@@ -11,7 +11,8 @@ const searchNews = async (req, res) => {
     const q = req.query.q;
     const searcbInAttribute = req.query.in;
     const lang = req.query.lang;
-    verify_cache_middleware_1.cache.set(q, await (0, api_1.search)(q, searcbInAttribute, lang));
-    res.send(await (0, api_1.search)(q, searcbInAttribute, lang));
+    const sortBy = req.query.sortby;
+    verify_cache_middleware_1.cache.set(q, await (0, api_1.search)(q, searcbInAttribute, lang, sortBy));
+    res.send(await (0, api_1.search)(q, searcbInAttribute, lang, sortBy));
 };
 exports.searchNews = searchNews;
